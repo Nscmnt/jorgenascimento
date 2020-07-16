@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(233, 108, 24);
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Merienda One', cursive;
+    box-sizing: border-box;
+    transition: all 500ms;
+}
+
+body {
+    background-image: url(../image/bga.jpg);
+    background-size: cover;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.section-perfil {
+    max-width: 500px;
+}
+
+.perfil {
+    width: 180px;
+    height: 180px;
+    margin: 50px 30px;
+    border-radius: 150px;
+    box-shadow: 0px 0px 40px rgb(233, 108, 24);
+    background-image: url(../image/perfil.jpg);
+    background-position: right;
+    transition: all 1.2s;
+}
+
+.perfil:hover {
+    box-shadow: 0px 0px 80px rgb(233, 108, 24);
+    width: 200px;
+    height: 200px;
+}
+
+.rede-sociais {
+    margin: 10px;
+    height: 100px;
+
+    display: flex;
+
+    flex-direction: row;
+
+}
+
+.rede-sociais img{
+    width: 50px;
+    height: 50px; 
+    
+    margin-right: 10px;
+
+    margin-top: 10px;
+}
+
+.rede-sociais img:hover{
+    margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+    * {
+        font-size: 20px;
+    }
+
+    .content{   
+        background-color: #000;
+    }
+    .perfil {
+        width: 100px;
+        height: 100px;
+        border-radius: 70px;
+        box-shadow: 0px 0px 20px rgb(233, 108, 24);
+        background-size: cover;
+        margin: 150px auto 30px;
+    }
+    .perfil:hover {
+        width: 120px;
+        height: 120px;
+    }
+    body {
+        background-image: url(/image/bg_b.jpg);
+    }
+    .content {
+        margin: 0 auto;
+        padding: 8px;
+    }
+
+    section p{
+        text-align: center;
+    }
+
+    .rede-sociais{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rede-sociais img{
+        width: 35px;
+        height: 35px;
+
+        background-color: rgb(238, 139, 57);
+    }
+}
+
