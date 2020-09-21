@@ -1,0 +1,114 @@
+@media  (max-width: 900px) {
+    nav{
+        justify-content: center;
+    }
+    p{
+        font-size: 15px;
+    }
+    h1.title{
+        font-size: 20px;
+    }
+
+    main .tecnologies{
+        flex-wrap: wrap;
+    }
+
+    .banner, .body{
+        height: auto;
+    }
+    .whatsapp img{
+        width: 50px;
+        height: 50px;
+    
+        position: fixed;
+    
+        bottom: 40%;
+        right: 25px;
+    }
+    
+    #services .content-body{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    #about .content-body{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #about{
+        height: 100vh;
+    }
+    #about .perfil{
+        width: 150px;
+        height: 150px;
+
+        border-radius: 75px;
+
+        margin: 0;
+    }
+
+    .foorter ul{
+        flex-wrap: wrap;
+    }
+   
+}
+
+@media  (max-width: 649px) {   
+    #mobile{
+        background-color: #222;
+    } 
+    label[for="btn-menu"]{
+        display: block;
+    }
+    
+    .header{
+        position: static;        
+    }
+
+    nav{       
+        width: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .header #top-menu{
+        display: none;
+    }
+   
+    #btn-menu:checked ~ #top-menu{
+        display: block;
+    }
+    
+    nav #top-menu:last-child{
+        margin: 0;
+    }
+
+    #top-menu a{
+        display: block;
+        width:100%;
+        margin: 0;
+
+        margin: 5px;
+    }
+    .banner .body .content {
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .tecnologies .box {
+        width: 150px;
+        height: 150px;
+        margin: 0 5px;        
+    }
+    #services{
+        width: 100vw;
+        height: 1500px;
+        padding: 2%;
+    }
+    #services .content-body .card p {
+        font-size: 14px;
+    }
+
+    #about .description p, #services .card p{
+       font-size: 14px;
+    }
+}

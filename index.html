@@ -6,58 +6,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jorge Nascimento</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <script src="script/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    
 </head>
 
-<body>
+<body>    
 
-    <main class="content">
+    <header>       
+        <div class="header">            
+            <nav>
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"> &#x2630; </label>
+                <ul id="top-menu">
+                    <a href="#" class="active">
+                        <li>Home</li>
+                    </a>
+                    <a href="#services">
+                        <li>Services</li>
+                    </a>
+                    <a href="#about">
+                        <li>About</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <section class="section-perfil">
-            <div class="perfil"></div>
-        </section>
+    <main>
+        <div class="banner">
+            <div class="body">
+                    <div class="content">
+                        <h1 class="title">Nascimento Desenvolvendo de Sistemas</h1>                
+                        <h2>Tecnologias</h2>
+                    </div>                    
 
-        <section>
-            <div class="descricao">
+                <div class="tecnologies">
 
-                <p>
-                    < Olá, meu nome é Jorge Nascimento, <br>
-                        estudante de Sistemas Web pela <a href="https://vemprafam.com.br/" target="_blank">FAM</a> <br> e futuro Desenvolvedor Front end />
-                </p>
+                    <div class="box">
+                        <div class="icons">
+                            <a href=""><img src="images/react.png" alt="reactjs"></a>
+                            <p>ReactJS</p>
+                        </div>
+                    </div>
 
+                    <div class="box">
+                        <div class="icons">
+                            <a href=""><img src="images/nodejs.svg" alt="nodejs"></a>
+                            <p>NodeJS</p>
+                        </div>
+                    </div>
 
+                    <div class="box">
+                        <div class="icons">
+                            <a href=""><img src="images/mongodb.svg" alt="mongoDB"></a>
+                            <p>MongoDB</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href=""><img src="images/docker.svg" alt="reactjs"></a>
+                            <p>Docker</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-        </section>
+        <div class="whatsapp">
+           <a href="https://api.whatsapp.com/send?phone=11952454464"><img src="images/whatsapp.svg" alt="whatsapp"></a> 
 
-        <section>
-            <div class="rede-sociais">
-
-                <a href="http://github.com/Nscmnt" target="_blank"> <img src="image/github.svg" alt=""> </a>
-
-                <a href="https://www.linkedin.com/in/jorge-nascimento-a465511ab/" target="_blank"> <img src="image/linkedin.png" alt=""> </a>
-
-
-                <a href="https://www.facebook.com/jorge.nascimento.520" target="_blank"> <img src="image/facebook.png" alt=""> </a>
-
-
-                <a href="https://www.instagram.com/jorgenascimento_" target="_blank"> <img src="image/instagram.png" alt=""> </a>
-
-                <a href="https://api.whatsapp.com/send?phone=11952454464" target="_blank"> <img src="image/whatsapp.png" alt=""> </a>
-
-                <a href="mailto:jorg3nascimento@gmail.com" target="_blank"> <img src="image/email.svg" title="jorg3nascimento@gmail.com"> </a>
-
-
-
-            </div>
-        </section>
-
-
-
+        </div>
     </main>
+
+    <section id="services">
+        
+        <h1 class="title">Portifólio</h1>
+
+        <div class="content-body">
+            <div class="card">
+                <h3>Landing Pages</h3>
+                <div class="under"></div>
+                <p>
+                    Landing page é qualquer página na internet criada para receber estrategicamente visitantes a fim de
+                    faze-los gerar uma determinada conversão.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Landing Pages</h3>
+                <div class="under"></div>
+                <p>
+                    Landing page é qualquer página na internet criada para receber estrategicamente visitantes a fim de
+                    faze-los gerar uma determinada conversão.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Landing Pages</h3>
+                <div class="under"></div>
+                <p>
+                    Landing page é qualquer página na internet criada para receber estrategicamente visitantes a fim de
+                    faze-los gerar uma determinada conversão.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Landing Pages</h3>
+                <div class="under"></div>
+                <p>
+                    Landing page é qualquer página na internet criada para receber estrategicamente visitantes a fim de
+                    faze-los gerar uma determinada conversão.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <h1 class="title">About</h1>
+
+        <div class="content-body">
+            <div class="perfil"></div>
+            <div class="description">
+                <img src="images/aspas.png" alt="sobre ">
+                   <p>Desenvolvedor Front End, casado, pacifista, curioso, apaixonado por descobrir e evoluir no mundo tecnológico, buscando formas de melhorar a vida das pessoas por meio de soluções de software.</p>  <br>
+                    <h4>< Jorge Nascimento /></h4>             
+            </div>            
+        </div> 
+        <hr>
+
+        <footer>
+
+            <div id="contact" class="footer">
+                <h1 class="title"><em>Vamos nos conhecer?</em></h1>
+                <ul>
+                    <a href="https://twitter.com/Jotta_0"><li><img src="images/twitter-3-64.png" alt="twitter"></li></a>
+
+                    <a href="https://web.facebook.com/jorge.nascimento.520"><li><img src="images/facebook-3-64.png" alt="facebook"></li></a>
+
+                    <a href="https://www.instagram.com/jorgenascimento_"><li><img src="images/instagram-64.png" alt="instagram"></li></a>
+
+                    <a href="https://www.linkedin.com/in/jorge-nascimento-a465511ab/"><li><img src="images/linkedin-3-64.png" alt="linkdin"></li></a>
+                </ul>
+            </div>
+
+        </footer>
+
+    </section>
+
+    
+
+
 </body>
 
 </html>
