@@ -27,7 +27,7 @@ body{
 
 label[for="btn-menu"]{
     padding: 5px;
-    background-color: #222;
+    background-color: rgb(17, 17, 17);
     color: #fff;
     text-align: center;
     font-size: 30px;

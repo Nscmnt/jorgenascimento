@@ -61,7 +61,7 @@
     }
     
     .header{
-        position: static;        
+        position: fixed;        
     }
 
     nav{       
