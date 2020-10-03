@@ -11,24 +11,26 @@
     font-family: 'Rajdhani', sans-serif;
       
 }
-body{
-    background-color: var(--color-body);
-}
 
 :root{
+    --color-body:#f0e9dc;
     --cor-bg-principal: #000010;
-    --bg-banner:rgba(31, 1, 1, 0.5);
-    --cor-principal: #ff51009c;
-    --font-principal-dark:#191D30;
-    --color-body:#e9dfca;
-    --bg-card:rgba(235, 212, 186, 0.836);
-    --color-under: #D24517;
+    --bg-banner:rgba(51, 10, 0, 0.3);
+    --font-principal-dark:#1a0500; 
+    --font-color-light:#ffebe6;
+    --cor-principal: #cc2900;       
+    --bg-card:#ffebe6;
+    --color-under: #ff5c33;
 }
+
+body{
+    background-color: var(--color-body);
+}   
 
 label[for="btn-menu"]{
     padding: 5px;
-    background-color: rgb(17, 17, 17);
-    color: #fff;
+    background-color: var(--cor-bg-principal);
+    color:var(--font-color-light);
     text-align: center;
     font-size: 30px;
     cursor: pointer;
@@ -63,7 +65,7 @@ nav {
     text-transform: uppercase;
 }
 nav #top-menu a{
-    color: #ECDFC3;
+    color: var(--font-color-light);
 
     display: inline-block;
 
@@ -105,7 +107,7 @@ nav #top-menu a.active{
     background-clip: border-box;
     background-size: cover;
 
-    color: whitesmoke ;
+    color:var(--font-color-light) ;
     
 }
 .banner .body{
@@ -149,7 +151,6 @@ main .tecnologies{
     align-items: center;
 
     margin: 0 20px 0 20px;
-
 }
 
 .tecnologies .box .icons{
@@ -159,19 +160,17 @@ main .tecnologies{
     display: flex;
     justify-content: center;
     align-items: center;   
-    flex-direction: column;
+    flex-direction: column;   
+    transition: all .5s; 
+}
 
-    
+.tecnologies .box .icons:hover{
+    border: 3px solid var(--cor-principal);
+    border-radius: 10px;
 }
 .tecnologies .box .icons img{
     width: 130px;
     height: 100px;
-    transition: all 1s;
-}
-.tecnologies .box .icons img:hover{
-    width: 100px;
-    height: 80px;
-    
 }
 
 .tecnologies .box .icons p{
@@ -232,22 +231,24 @@ h1.title{
     padding: 10px;
     margin: 15px;
 
+    border-radius: 25px;
+
     background-color: var(--bg-card);
 
-    box-shadow: 0px 0px 10px 5px var(--cor-principal);  
+    box-shadow: 3px 3px  3px var(--bg-banner);  
     
     transition: all 0.5s;
 }
 #services .content-body .card:hover{
-    box-shadow: 0px 0px 17px 7px  var(--cor-principal);
+    box-shadow: 0px 0px  3px 3px var(--bg-banner);
     
     cursor: pointer;
 
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 #services .content-body .card:hover .under{
-    width: 60px;
+    width: 45px;
 }
 
 #services .content-body .card .under{
@@ -257,7 +258,7 @@ h1.title{
     border-radius: 5px;
     background-color: var(--color-under);
 
-    transition: all 1s;
+    transition: all .5s;
 }
 #services .content-body .card p{
     font-size: 16px;
@@ -298,15 +299,16 @@ h1.title{
 }
 
 #about .perfil{
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
 
     margin-left: 50px;
-    border-radius: 140px;
+    border-radius: 50%;
 
     background: url(../images/perfil.jpg);
 
-    background-size: cover;    
+    background-size: cover;   
+    margin-bottom: 30px;
 }
 
 #about .description{
@@ -317,14 +319,13 @@ h1.title{
 }
 
 #about .description p{
-    color: var(--color-body);
+    color: var(--font-color-light);
 
     font-size: 18px;
 }
 
 #about .description h4{
-    color: var(--color-body);
-
+    color: var(--font-color-light);
     font-size: 22px;
 }
 
@@ -332,13 +333,12 @@ h1.title{
     width: 100%;
     height: 100px;
 
-    background-color:var(--font-principal-dark);
+    background-color:var(--cor-bg-principal);
 }
 
 .footer h1{
 
     text-align: center;
-
     margin-top: 20px;
 }
 
@@ -350,13 +350,21 @@ h1.title{
     justify-content: center;
     align-items: center;
 }
-.footer ul a{
-    margin: 7px;
+.footer li{
+    margin: 10px;    
 }
 
-.footer ul a li img{
+.footer li img{
     width: 50px;
     height: 50px;
+
+    transition: all .5s;       
+}
+.footer ul li:hover img{
+    cursor: pointer;
+    
+    width: 52px;
+    height: 52px;
 }
 
 
